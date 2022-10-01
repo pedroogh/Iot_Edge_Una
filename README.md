@@ -10,8 +10,8 @@
   
  Segue abaixo o código escrito:
  
-[Código Curso de Extensão IOT - Semaforo com Buzzer e LCD.txt](https://github.com/pedroogh/Iot_Edge_Una/files/9690356/Codigo.Curso.de.Extensao.IOT.-.Semaforo.com.Buzzer.e.LCD.txt)
+ https://github.com/pedroogh/Iot_Edge_Una/blob/main/codigo
 
-Segue abaixo o link do tinkercad para simulação:
+ Segue abaixo o link do tinkercad para simulação:
 
-https://www.tinkercad.com/things/1fPdC3hgAgO-semaforo-com-buzzer-e-lcd-/editel?sharecode=2BruPMiyeW-CrKVXtvovLA_YivVhvZWf96hr1ffJIbo
+ https://www.tinkercad.com/things/1fPdC3hgAgO-semaforo-com-buzzer-e-lcd-/editel?sharecode=2BruPMiyeW-CrKVXtvovLA_YivVhvZWf96hr1ffJIbo
