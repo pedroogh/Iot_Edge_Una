@@ -7,7 +7,8 @@
  Segue abaixo um print da montagem no tinkercad:
  ![image](https://user-images.githubusercontent.com/111025893/193410311-39c14b1c-1c62-46ab-9905-b06abdbacc14.png)
   
-   Segue abaixo o código escrito:
+ Segue abaixo o código escrito:
+ 
 [Código Curso de Extensão IOT - Semaforo com Buzzer e LCD.txt](https://github.com/pedroogh/Iot_Edge_Una/files/9690356/Codigo.Curso.de.Extensao.IOT.-.Semaforo.com.Buzzer.e.LCD.txt)
 
 Segue abaixo o link do tinkercad para simulação:
