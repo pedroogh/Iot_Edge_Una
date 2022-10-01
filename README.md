@@ -10,7 +10,7 @@
   
  Segue abaixo o código escrito:
  
- https://github.com/pedroogh/Iot_Edge_Una/blob/main/codigo
+ https://github.com/pedroogh/Iot_Edge_Una/blob/main/Código%20do%20projeto%20-%20Semaforo%20com%20Buzzer%20e%20LCD
 
  Segue abaixo o link do tinkercad para simulação:
 
