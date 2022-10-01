@@ -1,22 +1,16 @@
 # Trabalho para avaliação do curso de Iot.
  Aluno: Pedro Henrique de Oliveira Gomes
  
- Foi feita a montagem de um circuito com arduino, no Software Tinkercad onde faz a simulação de um semáforo com LCD e Buzzer para informar quando o pedestre pode atravessar.
- 
- Segue abaixo o link do tinkercad para simulação:
- https://www.tinkercad.com/things/1fPdC3hgAgO-semaforo-com-buzzer-e-lcd-/editel?sharecode=2BruPMiyeW-CrKVXtvovLA_YivVhvZWf96hr1ffJIbo
- 
+ Foi feita a montagem de um circuito com arduino, no Software Tinkercad onde faz a simulação de um semáforo com LCD e Buzzer para informar quando o pedestre pode atravessar, quando não pode e quando deve ter cuidado para isso usei buzzers com tons diferentes.
+  
  Segue abaixo um print da montagem no tinkercad:
  ![image](https://user-images.githubusercontent.com/111025893/193410311-39c14b1c-1c62-46ab-9905-b06abdbacc14.png)
   
   
  Segue abaixo o código escrito:
+ 
  // C++ code
-//
 #include <Adafruit_LiquidCrystal.h>
-
-
-
 Adafruit_LiquidCrystal lcd_1(0);
 
 void setup()
@@ -39,17 +33,14 @@ void loop()
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,1200);
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,800);
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,1000);
   	delay(200);
   	noTone(8);
@@ -58,7 +49,6 @@ void loop()
   }
   lcd_1.clear(); // Desligo o LCD
   digitalWrite(13, LOW); // Desligo o LED
-  
   digitalWrite(12, HIGH);// Acendo o LED Amarelo.
   lcd_1.print("Cuidado !");// Indico que o pedestre para ter cuidado ao atravessar.
   buzzer = 0;//Zero o buzzer para reiniciar a contagem do while.
@@ -67,26 +57,22 @@ void loop()
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,1200);
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,500);
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,1000);
   	delay(200);
   	noTone(8);
   	delay(500);
-    buzzer++;
+   buzzer++;
   }
   lcd_1.clear();// Desligo o LCD
   digitalWrite(12, LOW);// Desligo o LED
-  
   digitalWrite(11, HIGH);// Acendo o LED Verde.
   lcd_1.print("Nao atravesse");// Indico que o pedestre não pode atravessar.
   buzzer = 0;//Zero o buzzer para reiniciar a contagem do while.
@@ -95,17 +81,14 @@ void loop()
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,1000);
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,600);
   	delay(200);
   	noTone(8);
   	delay(500);
-  
   	tone(8,1000);
   	delay(200);
   	noTone(8);
@@ -115,3 +98,6 @@ void loop()
   digitalWrite(11, LOW);// Desligo o LED
   lcd_1.clear();// Desligo o LCD
 }
+
+Segue abaixo o link do tinkercad para simulação:
+ https://www.tinkercad.com/things/1fPdC3hgAgO-semaforo-com-buzzer-e-lcd-/editel?sharecode=2BruPMiyeW-CrKVXtvovLA_YivVhvZWf96hr1ffJIbo
