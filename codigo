@@ -1,0 +1,89 @@
+// C++ code
+#include <Adafruit_LiquidCrystal.h>
+Adafruit_LiquidCrystal lcd_1(0);
+
+void setup()
+{
+  pinMode(13, OUTPUT);
+  lcd_1.begin(16, 2);
+  pinMode(12, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(11, OUTPUT);
+}
+
+void loop()
+{
+  
+  digitalWrite(13, HIGH); // Acendo o LED Vermelho.
+  lcd_1.print("Atravesse"); // Indico que o pedestre pode atravessar.
+  int buzzer = 0; // Declaro uma variável para tocar o buzzer.
+  while(buzzer<7){ // Toco o buzzer durante 19 segundos.
+  	tone(8,1000);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,1200);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,800);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,1000);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+    buzzer++;
+  }
+  lcd_1.clear(); // Desligo o LCD
+  digitalWrite(13, LOW); // Desligo o LED
+  digitalWrite(12, HIGH);// Acendo o LED Amarelo.
+  lcd_1.print("Cuidado !");// Indico que o pedestre para ter cuidado ao atravessar.
+  buzzer = 0;//Zero o buzzer para reiniciar a contagem do while.
+  while(buzzer<7){ // Toco o buzzer em tons diferentes durante 19 segundos.
+  	tone(8,900);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,1200);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,500);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,1000);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+   buzzer++;
+  }
+  lcd_1.clear();// Desligo o LCD
+  digitalWrite(12, LOW);// Desligo o LED
+  digitalWrite(11, HIGH);// Acendo o LED Verde.
+  lcd_1.print("Nao atravesse");// Indico que o pedestre não pode atravessar.
+  buzzer = 0;//Zero o buzzer para reiniciar a contagem do while.
+  while(buzzer<7){ // Toco o buzzer em tons diferentes durante 19 segundos.
+  	tone(8,800);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,1000);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,600);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+  	tone(8,1000);
+  	delay(200);
+  	noTone(8);
+  	delay(500);
+    buzzer++;
+  }
+  digitalWrite(11, LOW);// Desligo o LED
+  lcd_1.clear();// Desligo o LCD
+}
